@@ -63,17 +63,17 @@ export function DeliveryFAQ() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto break-keep">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  className="w-full px-4 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 >
                   <div className="flex items-center">
-                    <HelpCircle className="w-5 h-5 text-rose-500 mr-3 flex-shrink-0" />
-                    <span className="font-semibold text-gray-900">{faq.question}</span>
+                    <HelpCircle className="w-5 h-5 text-rose-500 mr-2 flex-shrink-0" />
+                    <span className="font-medium text-sm md:text-lg text-gray-900">{faq.question}</span>
                   </div>
                   {openIndex === index ? (
                     <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
@@ -84,7 +84,7 @@ export function DeliveryFAQ() {
 
                 {openIndex === index && (
                   <div className="px-6 pb-4">
-                    <div className="pl-8 text-gray-600 leading-relaxed">{faq.answer}</div>
+                    <div className="pl-0 text-sm md:text-base text-gray-600 leading-relaxed">{faq.answer}</div>
                   </div>
                 )}
               </div>
@@ -94,12 +94,12 @@ export function DeliveryFAQ() {
 
         {/* Still have questions */}
         <div className="mt-12 text-center">
-          <div className="bg-white rounded-2xl p-8 max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl p-4 max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-gray-900 mb-4 font-playfair">추가 문의사항이 있으신가요?</h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 text-base">
               친절한 고객서비스팀이 배송 관련 문의나 특별 요청사항에 대해 도움을 드리겠습니다.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center">
               <a href="tel:+82-2-1234-5678" className="btn-primary inline-flex items-center justify-center">
                 지금 전화하기
               </a>

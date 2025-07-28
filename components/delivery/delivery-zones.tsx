@@ -7,7 +7,7 @@ export function DeliveryZones() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">배송 가능 지역</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto break-keep">
             서울 및 경기도 전 지역에 퀵 배송 서비스를 제공합니다. 모든 상품은 차량으로 안전하게 운송되어 꽃이 완벽한
             상태로 도착하도록 보장합니다.
           </p>

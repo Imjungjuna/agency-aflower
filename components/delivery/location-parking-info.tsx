@@ -121,50 +121,71 @@ export function LocationParkingInfo() {
         {/* Additional Information */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="text-center border-rose-200">
-            <CardContent className="pt-6">
-              <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-6 h-6 text-rose-600" />
+            <CardContent className="">
+              <div className="flex items-center gap-4 justify-center sm:flex-col">
+                <div className="flex items-center gap-3 min-w-[120px] justify-center">
+                  <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center">
+                    <Clock className="w-6 h-6 text-rose-600" />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 sm:hidden">영업시간</h3>
+                </div>
+                <div className="flex-1 text-left sm:text-center">
+                  <h3 className="font-semibold text-gray-900 mb-2 hidden sm:block">영업시간</h3>
+                  <p className="text-sm text-gray-600">
+                    평일 09:00-20:00
+                    <br />
+                    토요일 09:00-18:00
+                    <br />
+                    일요일 10:00-17:00
+                  </p>
+                </div>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">영업시간</h3>
-              <p className="text-sm text-gray-600">
-                평일 09:00-20:00
-                <br />
-                토요일 09:00-18:00
-                <br />
-                일요일 10:00-17:00
-              </p>
             </CardContent>
           </Card>
 
           <Card className="text-center border-blue-200">
-            <CardContent className="pt-6">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Car className="w-6 h-6 text-blue-600" />
+            <CardContent className="">
+              <div className="flex items-center gap-4 justify-center sm:flex-col">
+                <div className="flex items-center gap-3 min-w-[120px] justify-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <Car className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 sm:hidden">주차 정보</h3>
+                </div>
+                <div className="flex-1 text-left sm:text-center">
+                  <h3 className="font-semibold text-gray-900 mb-2 hidden sm:block">주차 정보</h3>
+                  <p className="text-sm text-gray-600">
+                    건물 내 주차 2시간 무료
+                    <br />
+                    갓길 주차 후 픽업
+                    <br />
+                    매장 픽업 시 무료주차
+                  </p>
+                </div>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">주차 정보</h3>
-              <p className="text-sm text-gray-600">
-                건물 내 주차 2시간 무료
-                <br />
-                갓길 주차 후 픽업
-                <br />
-                매장 픽업 시 무료주차
-              </p>
             </CardContent>
           </Card>
 
           <Card className="text-center border-green-200">
-            <CardContent className="pt-6">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-6 h-6 text-green-600" />
+            <CardContent className="">
+              <div className="flex items-center gap-4 justify-center sm:flex-col">
+                <div className="flex items-center gap-3 min-w-[120px] justify-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-green-600" />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 sm:hidden">문의하기</h3>
+                </div>
+                <div className="flex-1 text-left sm:text-center">
+                  <h3 className="font-semibold text-gray-900 mb-2 hidden sm:block">문의하기</h3>
+                  <p className="text-sm text-gray-600">
+                    전화: 02-1234-5678
+                    <br />
+                    팩스: 02-1234-5679
+                    <br />
+                    이메일: info@aflower.co.kr
+                  </p>
+                </div>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">문의하기</h3>
-              <p className="text-sm text-gray-600">
-                전화: 02-1234-5678
-                <br />
-                팩스: 02-1234-5679
-                <br />
-                이메일: info@aflower.co.kr
-              </p>
             </CardContent>
           </Card>
         </div>

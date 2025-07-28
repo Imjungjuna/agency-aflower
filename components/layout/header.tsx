@@ -82,19 +82,16 @@ export function Header() {
                 Home
               </Link>
               <Link href="/shop" className="text-gray-700 hover:text-rose-600 transition-colors">
-                Shop
+                스토어
               </Link>
               <Link href="/about" className="text-gray-700 hover:text-rose-600 transition-colors">
-                About
+                소개
               </Link>
               <Link href="/delivery" className="text-gray-700 hover:text-rose-600 transition-colors">
-                Delivery
-              </Link>
-              <Link href="/blog" className="text-gray-700 hover:text-rose-600 transition-colors">
-                Blog
+                배송 안내
               </Link>
               <Link href="/contact" className="text-gray-700 hover:text-rose-600 transition-colors">
-                Contact
+                연락처
               </Link>
             </div>
           </nav>
