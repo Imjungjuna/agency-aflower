@@ -3,30 +3,30 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Kim",
-    role: "Bride",
+    name: "안겸댕",
+    role: "꽃다발 구매",
     content:
-      "AFLOWER made our wedding day absolutely magical. The arrangements were beyond our dreams, and the team was so professional and caring. Every detail was perfect!",
+      "급하게 전날에 예약하고 다음날 찾았는데, 원하는 튤립이 없엇으나 거베라라는 예쁜 대체 꽃으로 추천해주셔서 했습니다. 튤립만큼 크고 이쁜 꽃이라서 받으시는 분도 감동받으셧어요 ^^ 다음에 또 방문하겠습니다.!",
     rating: 5,
-    image: "/placeholder.svg?height=60&width=60",
+    image: "/logo-transparent.png",
   },
   {
     id: 2,
-    name: "Michael Park",
-    role: "Regular Customer",
+    name: "쇼오깅",
+    role: "선물용 꽃다발",
     content:
-      "I order from AFLOWER every month for my wife, and they never disappoint. The flowers are always fresh, beautifully arranged, and delivered on time.",
+      "누구에게, 어떤상황에서 주는 선물인지, 그리고 그에 맞춰 준비해주시는 섬세함. 이런 분들이 꽃을 다루는 거구나, 싶었습니다. 영하의 날씨에도 꼼꼼하게 포장해주신 덕분에 전혀 문제없이 꽃이 주인에게 잘 갔답니다 ◕‿◕ 꽃도 꽃이지만 포장도 너무 이쁘다며 좋아하던 모습을 보며, 제가 이 꽃집을 고생(?)해서 간 보람이 있었어요!",
     rating: 5,
-    image: "/placeholder.svg?height=60&width=60",
+    image: "/logo-transparent.png",
   },
   {
     id: 3,
-    name: "Jennifer Lee",
-    role: "Event Planner",
+    name: "하느드레",
+    role: "꽃다발 구매",
     content:
-      "As an event planner, I work with many florists, but AFLOWER stands out. Their creativity, reliability, and attention to detail make them my go-to choice.",
-    rating: 5,
-    image: "/placeholder.svg?height=60&width=60",
+      "사장님이 너무너무 친절하셨어요! 가격에 비해 꽃 양이 조금 아쉽지만, 꽃 조합이 예뻤고, 예약 때 미리 부탁드린 컬러로 해주셨습니다! 꽃이 상할까 걱정했는데 싱싱해서 오래갈 것 같아용 담에도 예약하고 싶습니당",
+    rating: 4,
+    image: "/logo-transparent.png",
   },
 ];
 
@@ -35,10 +35,8 @@ export function Testimonials() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">What Our Customers Say</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Dont just take our word for it. Her what our valued customers have to say about their AFLOWER experience.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-playfair">고객님들의 이야기</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">A FLOWER를 선택해주신 고객님들의 소중한 후기입니다.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -55,15 +53,11 @@ export function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-gray-700 mb-6 leading-relaxed">{testimonial.content}</p>
+              <p className="text-gray-700 mb-6 leading-relaxed break-keep">{testimonial.content}</p>
 
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-12 h-12 rounded-full overflow-hidden mr-4 bg-rose-50">
+                  <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-contain p-2" />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>

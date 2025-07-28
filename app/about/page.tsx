@@ -18,7 +18,7 @@ export default function AboutPage() {
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 9년이 넘는 시간 동안 A FLOWER는 단순한 꽃집을 넘어서는 존재였습니다. 우리는 플로리스트 예술을 통해 서울
-                지역사회에 아름다움, 기쁨, 의미 있는 연결을 가져오는 가족 경영 비즈니스입니다.
+                지역사회에 아름다움, 기쁨, 의미 있는 연결을 가져오는 가족 비즈니스입니다.
               </p>
             </div>
           </div>
@@ -36,13 +36,13 @@ export default function AboutPage() {
                   만드는 것입니다.
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  강남구의 작은 상점에서 시작하여 지역사회에서 신뢰받는 이름으로 성장했습니다. 우리가 만드는 모든
+                  정자동의 작은 상점에서 시작하여 지역사회에서 신뢰받는 이름으로 성장했습니다. 우리가 만드는 모든
                   꽃다발은 품질, 지속가능성, 그리고 각각의 꽃다발을 독특하게 만드는 개인적인 터치에 대한 우리의 약속을
                   이어갑니다.
                 </p>
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                  오늘날 A FLOWER는 2세대 가족 비즈니스가 된 것을 자랑스럽게 생각하며, 박 여사의 딸이 팀에 합류하여 핵심
-                  가치인 장인정신, 지역사회, 환경 보호를 유지하면서 새로운 아이디어를 가져왔습니다.
+                  오늘날 A FLOWER는 2세대 가족 비즈니스가 된 것을 자랑스럽게 생각하며, 늘 그랬듯이 핵심 가치인 장인정신,
+                  지역사회, 환경 보호를 유지하면서 새로운 추억과 선물을 고객들에게 안겨드리고자 합니다.
                 </p>
 
                 {/* Values */}
@@ -85,8 +85,8 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative size-120 rounded-3xl overflow-hidden flex mx-auto items-center justify-center">
-                <Image src="/frontView.jpg" alt="A FLOWER" fill className="fill" />
+              <div className="relative w-full max-w-md h-80 md:h-96 lg:h-120 rounded-3xl overflow-hidden flex mx-auto items-center justify-center">
+                <Image src="/frontView.jpg" alt="A FLOWER" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -106,9 +106,9 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="text-center md:text-left">
                   <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
-                    <p className="text-gray-500 text-sm">박 여사 사진</p>
+                    <p className="text-gray-500 text-sm">사장님 사진</p>
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3 font-playfair">박 여사</h3>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-3 font-playfair">박00</h3>
                   <p className="text-rose-600 font-medium mb-4 text-lg">창업주 & 마스터 플로리스트</p>
                 </div>
 
@@ -123,7 +123,7 @@ export default function AboutPage() {
                   </p>
                   <p className="text-gray-600 leading-relaxed">
                     지역사회와의 깊은 연결을 중요시하며, 지속가능한 꽃 재배 방식을 통해 환경 보호에도 기여하고 있습니다.
-                    2세대인 딸과 함께 새로운 도전을 이어가며 A FLOWER의 미래를 그려나가고 있습니다.
+                    9년째 초심을 잃지 않고 새로운 도전을 이어가며 A FLOWER의 미래를 그려나가고 있습니다.
                   </p>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="relative h-96 rounded-2xl overflow-hidden bg-gray-200 flex items-center justify-center">
+              <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden bg-gray-200 flex items-center justify-center">
                 <p className="text-gray-500">매장 내부 이미지</p>
               </div>
             </div>
